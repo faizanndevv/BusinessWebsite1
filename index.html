@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- ==========================================================
+                        META & TITLE
+        ========================================================== -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- ==========================================================
+                        EXTERNAL STYLESHEETS
+        ========================================================== -->
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+
+        <!-- Google Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/media.css" />
+
+        <title>WsCubeTech</title>
+    </head>
+
+    <body>
+        <!-- ==========================================================
+                        MODALS
+        ========================================================== -->
+
+        <!-- ==========================================================
+                        ENQUIRY MODAL
+        ========================================================== -->
+        <div
+            class="modal fade"
+            id="enModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Enquire Now</h1>
+
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- Your content goes here -->
+                        <form action="" class="bannerForm ">
+                            <h4>Book Your Free Class Now!</h4>
+                            <p>2 days of free demo classes without paying in advance!</p>
+
+                            <div class="mb-3">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Phone</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1">+92</span>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Phone Number"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <button>Register Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================================
+                        BOOK DEMO MODAL
+        ========================================================== -->
+        <div
+            class="modal fade"
+            id="demoModal"
+            tabindex="-1"
+            aria-labelledby="demoModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="demoModalLabel">
+                            Book 2 Days Demo
+                        </h5>
+
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close">
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form class="bannerForm">
+
+                            <h4>Book Your Free Demo</h4>
+                            <p>Fill in your details to reserve your seat.</p>
+
+                            <div class="mb-3">
+                                <label class="form-label">Name</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Enter your name"
+                                />
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Phone</label>
+
+                                <div class="input-group">
+                                    <span class="input-group-text">+92</span>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Phone Number"
+                                    />
+                                </div>
+                            </div>
+
+                            <button type="submit">
+                                Book Demo
+                            </button>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================================
+                        HEADER SECTION
+        ========================================================== -->
+        <header
+            class="container-fluid bg-white py-2 shadow-lg position-sticky top-0"
+        >
+            <div class="container">
+                <div class="row align-items-center">
+                    <figure class="col-lg-6 col-12 text-lg-start text-center mb-0 pb-0">
+                        <img
+                            src="images/wscube-tech-logo.svg"
+                            class="img-fluid"
+                            alt="WsCube Tech Logo"
+                        />
+                    </figure>
+
+                    <div class="col-lg-6">
+                        <div class="btn-outer d-flex gap-3 justify-content-end">
+                            <button class="btn whatsappbtn">
+                                <i class="fa-brands fa-whatsapp me-2"></i> Chat With Us
+                            </button>
+                            <button class="btn call">
+                                <i class="fa-solid fa-phone"></i> Call Us
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ==========================================================
+                        HERO SECTION
+        ========================================================== -->
+        <section class="container-fluid py-lg-5 py-sm-4 py-3">
+            <div class="container">
+                <div class="row justify-content-between gy-4 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="bannerContent">
+                            <h1>
+                                Career Opportunities <br />
+                                in <span>Digital Marketing</span>
+                            </h1>
+                            <p>
+                                Digital marketing course so good, you only pay-after-placement
+                            </p>
+
+                            <ul class="m-0 p-0">
+                                <li class="mb-3">
+                                    <i class="fa-solid fa-circle-check"></i> Specialization:
+                                    Performance Marketing
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fa-solid fa-circle-check"></i> Min salary of Rs 4.5
+                                    LPA
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fa-solid fa-circle-check"></i> 50 seats only
+                                </li>
+                            </ul>
+
+                            <div class="bannerContentBtn d-flex gap-3">
+                                <button data-bs-toggle="modal" data-bs-target="#demoModal">Book 2 Days Demo</button>
+                                <button data-bs-toggle="modal" data-bs-target="#enModal">
+                                    <i class="fa-solid fa-download"></i> Download Curriculum
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <form action="" class="bannerForm shadow-lg">
+                            <h4>Book Your Free Class Now!</h4>
+                            <p>2 days of free demo classes without paying in advance!</p>
+
+                            <div class="mb-3">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Phone</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1">+92</span>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Phone Number"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <button>Register Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==========================================================
+                            COUNTER SECTION
+            ========================================================== -->
+            <div class="container shadow-lg mt-5 countSection">
+                <div class="row row-cols-lg-5 row-cols-md-2 row-cols-2 p-4">
+                    <div class="col">
+                        <h2>1000+</h2>
+                        <p>Students Trained</p>
+                    </div>
+                    <div class="col">
+                        <h2>₹4.5 LPA+</h2>
+                        <p>Students Trained</p>
+                    </div>
+                    <div class="col">
+                        <h2>320+</h2>
+                        <p>Recruitment Partners</p>
+                    </div>
+                    <div class="col">
+                        <h2>10:00 am</h2>
+                        <p>Program Timing</p>
+                    </div>
+                    <div class="col">
+                        <h2>11th May</h2>
+                        <p>Next Batch Starts</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+                        HIGHLIGHTS SECTION
+        ========================================================== -->
+        <section class="container-fluid highlights-section py-5">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <h2>Key Highlights Of The Course</h2>
+                        <p>World's simplest browser-based utility for randomizing lines in text. Load your text in the input form on the left.</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center gy-3">
+                    <div class="col-lg-4 col-sm-6 col-10">
+                        <div class="bg-white p-3 d-flex align-items-center gap-3 highlightsItems ">
+                            <i class="fa-regular fa-file-lines fs-2 text-primary"></i>
+                            <div>
+                                <h4>Assignments & <br> Modules tests</h4>
+                                <p>Test your knowledge</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-10">
+                        <div class="bg-white p-3 d-flex align-items-center gap-3 highlightsItems ">
+                            <i class="fa-regular fa-file-lines fs-2 text-primary"></i>
+                            <div>
+                                <h4>Assignments & <br> Modules tests</h4>
+                                <p>Test your knowledge</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-10">
+                        <div class="bg-white p-3 d-flex align-items-center gap-3 highlightsItems ">
+                            <i class="fa-regular fa-file-lines fs-2 text-primary"></i>
+                            <div>
+                                <h4>Assignments & <br> Modules tests</h4>
+                                <p>Test your knowledge</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-10">
+                        <div class="bg-white p-3 d-flex align-items-center gap-3 highlightsItems ">
+                            <i class="fa-regular fa-file-lines fs-2 text-primary"></i>
+                            <div>
+                                <h4>Assignments & <br> Modules tests</h4>
+                                <p>Test your knowledge</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-10">
+                        <div class="bg-white p-3 d-flex align-items-center gap-3 highlightsItems ">
+                            <i class="fa-regular fa-file-lines fs-2 text-primary"></i>
+                            <div>
+                                <h4>Assignments & <br> Modules tests</h4>
+                                <p>Test your knowledge</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-10">
+                        <div class="bg-white p-3 d-flex align-items-center gap-3 highlightsItems ">
+                            <i class="fa-regular fa-file-lines fs-2 text-primary"></i>
+                            <div>
+                                <h4>Assignments & <br> Modules tests</h4>
+                                <p>Test your knowledge</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+                        CERTIFIED SECTION
+        ========================================================== -->
+        <section class="container-fluid certifiedSection py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+
+                    <!-- Left Side -->
+                    <div class="col-lg-6">
+
+                        <h2>Get Certified</h2>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Impedit tellus ut ornare pharetra leo vestibulum at orci.
+                        </p>
+
+                        <!-- Card 1 -->
+                        <div class="bg-white shadow-sm p-3 d-flex align-items-center gap-3 mb-3">
+                            <i class="fa-solid fa-certificate fs-2 text-info"></i>
+
+                            <div>
+                                <h5 class="mb-1">Official And Verified</h5>
+                                <p class="mb-0">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="bg-white shadow-sm p-3 d-flex align-items-center gap-3 mb-3">
+                            <i class="fa-solid fa-share-nodes fs-2 text-info"></i>
+
+                            <div>
+                                <h5 class="mb-1">Easily Shareable</h5>
+                                <p class="mb-0">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="bg-white shadow-sm p-3 d-flex align-items-center gap-3 mb-4">
+                            <i class="fa-solid fa-chart-line fs-2 text-info"></i>
+
+                            <div>
+                                <h5 class="mb-1">Career Shifting</h5>
+                                <p class="mb-0">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary px-4">
+                            Book Free Class
+                        </button>
+
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="col-lg-6 text-center">
+                        <img src="https://picsum.photos/500/700" class="img-fluid" alt="Certificate">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+                        CURRICULUM SECTION
+        ========================================================== -->
+        <section class="container-fluid py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="fw-bold">Curriculum Of <br> Our Digital Marketing</h2>
+                        <p class="text-muted mt-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Impedit tellus ut ornare pharetra.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 tabMySystem">
+
+                        <ul class="nav nav-pills justify-content-center gap-2 mb-4" id="courseTabs" role="tablist">
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#all"
+                                    type="button">
+                                    All
+                                </button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#web"
+                                    type="button">
+                                    Web Development
+                                </button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#seo"
+                                    type="button">
+                                    SEO
+                                </button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#marketing"
+                                    type="button">
+                                    Marketing
+                                </button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#graphic"
+                                    type="button">
+                                    Graphic Design
+                                </button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#uiux"
+                                    type="button">
+                                    UI/UX
+                                </button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#content"
+                                    type="button">
+                                    Content
+                                </button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#wordpress"
+                                    type="button">
+                                    WordPress
+                                </button>
+                            </li>
+
+                        </ul>
+
+                        <div class="tab-content mt-5">
+
+                            <!-- All Courses -->
+                            <div class="tab-pane fade show active" id="all">
+                                <div class="card border-0 shadow-lg rounded-4">
+                                    <div class="card-body p-5">
+                                        <h3 class="fw-bold mb-4">Master Digital Skills That Drive Career Success</h3>
+                                        <p class="text-secondary lh-lg mb-0">
+                                            Our industry-focused programs are carefully designed to help students, freelancers,
+                                            entrepreneurs, and professionals develop practical digital skills that are highly
+                                            valued in today's job market. From Web Development and Search Engine Optimization
+                                            to UI/UX Design, Digital Marketing, Graphic Design, Content Writing, and WordPress,
+                                            every course combines expert-led training with real-world projects, portfolio building,
+                                            interview preparation, and career guidance to ensure you graduate with confidence
+                                            and job-ready expertise.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Web Development -->
+                            <div class="tab-pane fade" id="web">
+                                <div class="card border-0 shadow-lg rounded-4">
+                                    <div class="card-body p-5">
+                                        <h3 class="fw-bold mb-4">Professional Web Development</h3>
+                                        <p class="text-secondary lh-lg mb-0">
+                                            Learn modern website development from the ground up using HTML5, CSS3, Bootstrap,
+                                            JavaScript, React, PHP, Laravel, and MySQL. Build responsive websites, interactive
+                                            web applications, and real client projects while following industry best practices.
+                                            Gain practical experience with Git, GitHub, deployment, APIs, and performance
+                                            optimization, enabling you to confidently pursue freelance projects or full-time
+                                            software development opportunities.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SEO -->
+                            <div class="tab-pane fade" id="seo">
+                                <div class="card border-0 shadow-lg rounded-4">
+                                    <div class="card-body p-5">
+                                        <h3 class="fw-bold mb-4">Search Engine Optimization (SEO)</h3>
+                                        <p class="text-secondary lh-lg mb-0">
+                                            Master the complete SEO process, including keyword research, technical SEO,
+                                            on-page optimization, off-page strategies, backlink building, local SEO,
+                                            Google Search Console, Google Analytics, and website audits. Learn how to
+                                            improve search rankings, increase organic traffic, and create long-term growth
+                                            strategies that help businesses achieve greater online visibility and sustainable
+                                            digital success.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Digital Marketing -->
+                            <div class="tab-pane fade" id="marketing">
+                                <div class="card border-0 shadow-lg rounded-4">
+                                    <div class="card-body p-5">
+                                        <h3 class="fw-bold mb-4">Digital Marketing</h3>
+                                        <p class="text-secondary lh-lg mb-0">
+                                            Develop expertise in complete digital marketing by learning Google Ads,
+                                            Facebook Ads, Instagram Marketing, YouTube Marketing, Email Campaigns,
+                                            Affiliate Marketing, Lead Generation, Conversion Optimization, and Analytics.
+                                            Work on live campaigns, understand audience targeting, maximize return on
+                                            investment, and build marketing strategies used by leading global brands.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Graphic Design -->
+                            <div class="tab-pane fade" id="graphic">
+                                <div class="card border-0 shadow-lg rounded-4">
+                                    <div class="card-body p-5">
+                                        <h3 class="fw-bold mb-4">Graphic Design</h3>
+                                        <p class="text-secondary lh-lg mb-0">
+                                            Create visually stunning designs using Adobe Photoshop, Illustrator, Canva,
+                                            and industry-standard design principles. Learn branding, logo creation,
+                                            social media graphics, banners, brochures, advertisements, and print design.
+                                            Build a professional portfolio while mastering typography, color theory,
+                                            composition, and creative problem-solving techniques demanded by employers.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- UI/UX -->
+                            <div class="tab-pane fade" id="uiux">
+                                <div class="card border-0 shadow-lg rounded-4">
+                                    <div class="card-body p-5">
+                                        <h3 class="fw-bold mb-4">UI / UX Design</h3>
+                                        <p class="text-secondary lh-lg mb-0">
+                                            Learn to design intuitive and engaging digital experiences using Figma and
+                                            modern UX methodologies. Create wireframes, user flows, interactive prototypes,
+                                            responsive interfaces, and scalable design systems while understanding user
+                                            psychology, accessibility, usability testing, and product design principles
+                                            followed by leading technology companies worldwide.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Content Writing -->
+                            <div class="tab-pane fade" id="content">
+                                <div class="card border-0 shadow-lg rounded-4">
+                                    <div class="card-body p-5">
+                                        <h3 class="fw-bold mb-4">Content Writing</h3>
+                                        <p class="text-secondary lh-lg mb-0">
+                                            Become a professional content writer by mastering SEO writing, copywriting,
+                                            blogging, storytelling, website content, email campaigns, product descriptions,
+                                            and social media content. Learn how to write persuasive, audience-focused,
+                                            and search-engine-friendly content that increases engagement, builds trust,
+                                            and drives measurable business results.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- WordPress -->
+                            <div class="tab-pane fade" id="wordpress">
+                                <div class="card border-0 shadow-lg rounded-4">
+                                    <div class="card-body p-5">
+                                        <h3 class="fw-bold mb-4">WordPress Development</h3>
+                                        <p class="text-secondary lh-lg mb-0">
+                                            Build professional, responsive, and SEO-friendly websites using WordPress,
+                                            Elementor, WooCommerce, premium themes, and essential plugins. Learn website
+                                            customization, speed optimization, security, payment gateway integration,
+                                            backup management, and hosting configuration while developing complete
+                                            business, portfolio, e-commerce, and blog websites from scratch.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+                        FAQ SECTION
+        ========================================================== -->
+        <section class="container-fluid py-5 bg-secondary-subtle">
+            <div class="container">
+
+                <!-- Heading -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="fw-bold">
+                            Digital Marketing Course <br>
+                            FAQs
+                        </h2>
+
+                        <p class="text-muted mt-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Impedit tellus ut ornare pharetra.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Accordion -->
+                <div class="row justify-content-center mt-4">
+                    <div class="col-lg-8">
+
+                        <div class="accordion" id="faqAccordion">
+
+                            <!-- Item 1 -->
+                            <div class="accordion-item mb-3 border rounded shadow-sm">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq1">
+                                        What is website development?
+                                    </button>
+                                </h2>
+
+                                <div id="faq1"
+                                    class="accordion-collapse collapse show"
+                                    data-bs-parent="#faqAccordion">
+
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Quisquam, accusantium. Reiciendis nemo, pariatur
+                                        perspiciatis maxime molestiae officiis.
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="accordion-item mb-3 border rounded shadow-sm">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq2">
+                                        What is website development?
+                                    </button>
+                                </h2>
+
+                                <div id="faq2"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion">
+
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="accordion-item mb-3 border rounded shadow-sm">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq3">
+                                        What is website development?
+                                    </button>
+                                </h2>
+
+                                <div id="faq3"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion">
+
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Item 4 -->
+                            <div class="accordion-item border rounded shadow-sm">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq4">
+                                        What is website development?
+                                    </button>
+                                </h2>
+
+                                <div id="faq4"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion">
+
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Button -->
+                <div class="row mt-4">
+                    <div class="col text-center">
+                        <button class="btn btn-primary rounded-3 px-5 py-2 shadow">
+                            Book Free Class
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+                        SCRIPTS
+        ========================================================== -->
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        const tooltipList = [...tooltipTriggerList].map(
+            tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl)
+        );
+    </script>
+</html>
